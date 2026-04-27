@@ -8,7 +8,7 @@ class MainClient extends Client {
             intents: 32767,
         });
 
-    this.config = require("./Settings/config.js");
+    this.config = require("./config.js");
     this.owner = this.config.OWNER_ID;
     this.dev = this.config.DEV_ID;
     this.color = this.config.EMBED_COLOR;
