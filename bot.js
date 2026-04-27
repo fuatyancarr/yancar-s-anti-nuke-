@@ -20,7 +20,7 @@ class MainClient extends Client {
     const client = this;
 
     ["slash", "premiums"].forEach(x => client[x] = new Collection());
-    ["Command", "Antinuke", "errLogger","Events", "Database",].forEach(x => require(`./Handler/${x}`)(client));
+    ["Command", "Antinuke", "errLogger","Events", "Database",].forEach(x => require(`./${x}`)(client));
 
 	}
 		connect() {
